@@ -49,7 +49,7 @@ for file in inaugural:
     
 # write pres Dictionary to txt file
 with open("inaugural_scores.txt", "w") as openfile:
-    openfile.write("year-president\tword\tscore\n")
+    openfile.write("president\tword\tscore\n")
     for key in pres.keys():
         for idx, score in enumerate(pres[key]):
             openfile.write("\t".join([str(key),str(idx+1),str(score)]) + "\n")  
