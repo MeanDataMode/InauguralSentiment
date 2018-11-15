@@ -39,7 +39,7 @@ for file in inaugural:
 
     # Now its time to run the sentiment
     for idx, word in enumerate(the_words):
-        if word in sentiment_scores:
+        if word.lower() in sentiment_scores:
             place += sentiment_scores[word.lower()]
         scores[idx] = place
 
